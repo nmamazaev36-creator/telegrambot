@@ -351,10 +351,8 @@ Thread(target=run_web).start()
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-BOT_TOKEN = ("8450163431:AAG7-3labitwEXgx_JByMrz8dCZEVV6WTaU")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8450163431:AAG7-3labitwEXgx_JByMrz8dCZEVV6WTaU")
 bot = telebot.TeleBot(BOT_TOKEN)
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-
 
 
 MOVIES = [
@@ -367,7 +365,8 @@ MOVIES = [
         "description": "Группа исследователей отправляется сквозь червоточину в поисках новой планеты. Когда Земля умирает, экипаж путешествует за пределы галактики в надежде найти новый дом.",
         "photo": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
         "duration": "169 мин",
-        "director": "Кристофер Нолан"
+        "director": "Кристофер Нолан",
+        "link": "https://vk.com/video?q=Интерстеллар"  # Вставь свою ссылку
     },
     {
         "id": "movie_2",
@@ -378,7 +377,8 @@ MOVIES = [
         "description": "Кобб — вор, крадущий секреты из подсознания во время сна. Ему предлагают внедрить идею в разум человека.",
         "photo": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
         "duration": "148 мин",
-        "director": "Кристофер Нолан"
+        "director": "Кристофер Нолан",
+        "link": "https://vk.com/video?q=Начало+фильм"  # Вставь свою ссылку
     },
     {
         "id": "movie_3",
@@ -389,7 +389,8 @@ MOVIES = [
         "description": "Хакер Нео узнаёт, что его мир — симуляция машин. Он присоединяется к повстанцам, чтобы освободить человечество.",
         "photo": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
         "duration": "136 мин",
-        "director": "Братья Вачовски"
+        "director": "Братья Вачовски",
+        "link": "https://vk.com/video?q=Матрица+фильм"  # Вставь свою ссылку
     },
     {
         "id": "movie_4",
@@ -400,7 +401,8 @@ MOVIES = [
         "description": "Выжившие супергерои собираются, чтобы обратить вред, причинённый Таносом.",
         "photo": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
         "duration": "181 мин",
-        "director": "Братья Руссо"
+        "director": "Братья Руссо",
+        "link": "https://vk.com/video?q=Мстители+Финал"  # Вставь свою ссылку
     },
     {
         "id": "movie_5",
@@ -411,7 +413,8 @@ MOVIES = [
         "description": "Малоимущая семья внедряется в жизнь богатой семьи. Но их план рушится, когда вскрываются тёмные секреты дома.",
         "photo": "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29.png",
         "duration": "132 мин",
-        "director": "Пон Джун-хо"
+        "director": "Пон Джун-хо",
+        "link": "https://vk.com/video?q=Паразиты+фильм"  # Вставь свою ссылку
     },
 ]
 
@@ -425,7 +428,8 @@ SERIES = [
         "description": "Учитель химии начинает варить метамфетамин и постепенно превращается в безжалостного преступника.",
         "photo": "https://upload.wikimedia.org/wikipedia/en/6/61/Breaking_Bad_title_card.png",
         "seasons": "5 сезонов",
-        "episodes": "62 эпизода"
+        "episodes": "62 эпизода",
+        "link": "https://vk.com/video?q=Breaking+Bad"  # Вставь свою ссылку
     },
     {
         "id": "series_2",
@@ -436,7 +440,8 @@ SERIES = [
         "description": "Великие дома борются за Железный Трон, пока с севера надвигается древняя угроза.",
         "photo": "https://upload.wikimedia.org/wikipedia/en/d/d8/Game_of_Thrones_Season_3.jpg",
         "seasons": "8 сезонов",
-        "episodes": "73 эпизода"
+        "episodes": "73 эпизода",
+        "link": "https://vk.com/video?q=Игра+Престолов"  # Вставь свою ссылку
     },
     {
         "id": "series_3",
@@ -447,7 +452,8 @@ SERIES = [
         "description": "В маленьком городке пропадает мальчик. Его друзья раскрывают тайны сверхъестественного.",
         "photo": "https://upload.wikimedia.org/wikipedia/en/4/4e/Stranger_Things_season_1.jpg",
         "seasons": "5 сезонов",
-        "episodes": "42 эпизода"
+        "episodes": "42 эпизода",
+        "link": "https://vk.com/video?q=Очень+странные+дела"  # Вставь свою ссылку
     },
     {
         "id": "series_4",
@@ -458,7 +464,8 @@ SERIES = [
         "description": "Антологический сериал о тёмной стороне технологий. Каждый эпизод — отдельная история.",
         "photo": "https://upload.wikimedia.org/wikipedia/en/7/76/Black_Mirror_Season_1_Cover.png",
         "seasons": "6 сезонов",
-        "episodes": "27 эпизодов"
+        "episodes": "27 эпизодов",
+        "link": "https://vk.com/video?q=Чёрное+зеркало"  # Вставь свою ссылку
     },
     {
         "id": "series_5",
@@ -469,7 +476,8 @@ SERIES = [
         "description": "Геральт из Ривии — охотник на монстров — борется за место в мире, где люди опаснее чудовищ.",
         "photo": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Witcher_Season_1_Poster.jpg",
         "seasons": "3 сезона",
-        "episodes": "24 эпизода"
+        "episodes": "24 эпизода",
+        "link": "https://vk.com/video?q=Ведьмак+сериал"  # Вставь свою ссылку
     },
 ]
 
@@ -483,7 +491,8 @@ HORRORS = [
         "description": "Группа детей сталкивается с клоуном Пеннивайзом, который охотится на детей каждые 27 лет.",
         "photo": "https://upload.wikimedia.org/wikipedia/en/5/5c/It_%282017%29_poster.jpg",
         "scare_level": "👻👻👻👻",
-        "director": "Андрес Мускетти"
+        "director": "Андрес Мускетти",
+        "link": "https://vk.com/video?q=Оно+2017"  # Вставь свою ссылку
     },
     {
         "id": "horror_2",
@@ -494,7 +503,8 @@ HORRORS = [
         "description": "После смерти бабушки семья раскрывает ужасающие тайны своего рода.",
         "photo": "https://upload.wikimedia.org/wikipedia/en/a/a8/Hereditary_film_poster.png",
         "scare_level": "👻👻👻👻👻",
-        "director": "Ари Астер"
+        "director": "Ари Астер",
+        "link": "https://vk.com/video?q=Реинкарнация+2018"  # Вставь свою ссылку
     },
     {
         "id": "horror_3",
@@ -505,7 +515,8 @@ HORRORS = [
         "description": "Семья выживает в мире, где монстры охотятся на звук. Малейший шум означает смерть.",
         "photo": "https://upload.wikimedia.org/wikipedia/en/8/87/A_Quiet_Place_film_poster.jpg",
         "scare_level": "👻👻👻👻",
-        "director": "Джон Красински"
+        "director": "Джон Красински",
+        "link": "https://vk.com/video?q=Тихое+место"  # Вставь свою ссылку
     },
     {
         "id": "horror_4",
@@ -516,7 +527,8 @@ HORRORS = [
         "description": "Молодой человек знакомится с семьёй подруги и замечает всё более странное поведение окружающих.",
         "photo": "https://m.media-amazon.com/images/M/MV5BOGIxODA4ODktZTllYS00YTU0LThkYzQtYjgyNDA2MWI5OTQ0XkEyXkFqcGc@._V1_.jpg",
         "scare_level": "👻👻👻👻",
-        "director": "Джордан Пил"
+        "director": "Джордан Пил",
+        "link": "https://vk.com/video?q=Прочь+фильм+2017"  # Вставь свою ссылку
     },
     {
         "id": "horror_5",
@@ -527,10 +539,10 @@ HORRORS = [
         "description": "Душа сына застряла в тёмном измерении, полном злых духов.",
         "photo": "https://ir.ozone.ru/s3/multimedia-0/6705984204.jpg",
         "scare_level": "👻👻👻",
-        "director": "Джеймс Ван"
+        "director": "Джеймс Ван",
+        "link": "https://vk.com/video?q=Астрал+фильм"  # Вставь свою ссылку
     },
 ]
-
 
 
 def find_item(item_id):
@@ -596,13 +608,15 @@ def list_kb(items, back_data):
     kb.add(InlineKeyboardButton("◀️ Назад", callback_data=back_data))
     return kb
 
-def item_kb(back_data):
+def item_kb(back_data, link):
     kb = InlineKeyboardMarkup()
+    kb.add(InlineKeyboardButton("🔗 Смотреть ВКонтакте", url=link))
     kb.add(InlineKeyboardButton("◀️ Назад к списку", callback_data=back_data))
     kb.add(InlineKeyboardButton("🏠 Главное меню",   callback_data="main_menu"))
     return kb
 
 
+# =================== ХЭНДЛЕРЫ ===================
 
 @bot.message_handler(commands=["start"])
 def start(message):
@@ -680,7 +694,7 @@ def handle_callback(call):
                 photo=item["photo"],
                 caption=build_caption(item),
                 parse_mode="Markdown",
-                reply_markup=item_kb(back)
+                reply_markup=item_kb(back, item["link"])
             )
 
     bot.answer_callback_query(call.id)

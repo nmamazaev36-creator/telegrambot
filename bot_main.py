@@ -358,15 +358,15 @@ bot = telebot.TeleBot(BOT_TOKEN)
 MOVIES = [
     {
         "id": "movie_1",
-        "title": "Интерстеллар",
+        "title": "Интерстеллаp",
         "year": 2014,
         "rating": "⭐ 8.7",
         "genre": "Фантастика / Драма",
         "description": "Группа исследователей отправляется сквозь червоточину в поисках новой планеты. Когда Земля умирает, экипаж путешествует за пределы галактики в надежде найти новый дом.",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
+        "photo": "https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/430042eb-ee69-4818-aed0-a312400a26bf/220x330",
         "duration": "169 мин",
         "director": "Кристофер Нолан",
-        "link": "https://vk.com/video?q=Интерстеллар"  # Вставь свою ссылку
+        "link": "https://vk.com/video?q=Интерстеллар"
     },
     {
         "id": "movie_2",
@@ -375,10 +375,10 @@ MOVIES = [
         "rating": "⭐ 8.8",
         "genre": "Фантастика / Триллер",
         "description": "Кобб — вор, крадущий секреты из подсознания во время сна. Ему предлагают внедрить идею в разум человека.",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
+        "photo": "https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/8ab9a119-dd74-44f0-baec-0629797483d7/600x900",
         "duration": "148 мин",
         "director": "Кристофер Нолан",
-        "link": "https://vk.com/video?q=Начало+фильм"  # Вставь свою ссылку
+        "link": "https://vk.com/video?q=Начало+фильм"
     },
     {
         "id": "movie_3",
@@ -387,10 +387,10 @@ MOVIES = [
         "rating": "⭐ 8.7",
         "genre": "Фантастика / Экшн",
         "description": "Хакер Нео узнаёт, что его мир — симуляция машин. Он присоединяется к повстанцам, чтобы освободить человечество.",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
+        "photo": "https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/cf1970bc-3f08-4e0e-a095-2fb57c3aa7c6/220x330",
         "duration": "136 мин",
         "director": "Братья Вачовски",
-        "link": "https://vk.com/video?q=Матрица+фильм"  # Вставь свою ссылку
+        "link": "https://vk.com/video?q=Матрица+фильм"
     },
     {
         "id": "movie_4",
@@ -399,10 +399,10 @@ MOVIES = [
         "rating": "⭐ 8.4",
         "genre": "Фантастика / Экшн",
         "description": "Выжившие супергерои собираются, чтобы обратить вред, причинённый Таносом.",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
+        "photo": "https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/a7a0e0c3-2fd9-4a0d-b0db-ca9aa8b2e9a6/220x330",
         "duration": "181 мин",
         "director": "Братья Руссо",
-        "link": "https://vk.com/video?q=Мстители+Финал"  # Вставь свою ссылку
+        "link": "https://vk.com/video?q=Мстители+Финал"
     },
     {
         "id": "movie_5",
@@ -411,10 +411,10 @@ MOVIES = [
         "rating": "⭐ 8.5",
         "genre": "Триллер / Драма",
         "description": "Малоимущая семья внедряется в жизнь богатой семьи. Но их план рушится, когда вскрываются тёмные секреты дома.",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29.png",
+        "photo": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/0435da5a-3fcf-4049-b3b6-3b64e9c83ea5/220x330",
         "duration": "132 мин",
         "director": "Пон Джун-хо",
-        "link": "https://vk.com/video?q=Паразиты+фильм"  # Вставь свою ссылку
+        "link": "https://vk.com/video?q=Паразиты+фильм"
     },
 ]
 
@@ -426,10 +426,10 @@ SERIES = [
         "rating": "⭐ 9.5",
         "genre": "Драма / Триллер",
         "description": "Учитель химии начинает варить метамфетамин и постепенно превращается в безжалостного преступника.",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/6/61/Breaking_Bad_title_card.png",
+        "photo": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/f94bc567-d22b-4070-a430-c357f2f661dc/220x330",
         "seasons": "5 сезонов",
         "episodes": "62 эпизода",
-        "link": "https://vk.com/video?q=Breaking+Bad"  # Вставь свою ссылку
+        "link": "https://vk.com/video?q=Breaking+Bad"
     },
     {
         "id": "series_2",
@@ -438,10 +438,10 @@ SERIES = [
         "rating": "⭐ 9.2",
         "genre": "Фэнтези / Драма",
         "description": "Великие дома борются за Железный Трон, пока с севера надвигается древняя угроза.",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/d/d8/Game_of_Thrones_Season_3.jpg",
+        "photo": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/42742d57-9a98-4a03-9099-1b08bae8de5a/220x330",
         "seasons": "8 сезонов",
         "episodes": "73 эпизода",
-        "link": "https://vk.com/video?q=Игра+Престолов"  # Вставь свою ссылку
+        "link": "https://vk.com/video?q=Игра+Престолов"
     },
     {
         "id": "series_3",
@@ -450,10 +450,10 @@ SERIES = [
         "rating": "⭐ 8.7",
         "genre": "Ужасы / Фантастика",
         "description": "В маленьком городке пропадает мальчик. Его друзья раскрывают тайны сверхъестественного.",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/4/4e/Stranger_Things_season_1.jpg",
+        "photo": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/713b1826-b878-4f3b-955f-b3f7f36e06e1/220x330",
         "seasons": "5 сезонов",
         "episodes": "42 эпизода",
-        "link": "https://vk.com/video?q=Очень+странные+дела"  # Вставь свою ссылку
+        "link": "https://vk.com/video?q=Очень+странные+дела"
     },
     {
         "id": "series_4",
@@ -462,10 +462,10 @@ SERIES = [
         "rating": "⭐ 8.8",
         "genre": "Антология / Фантастика",
         "description": "Антологический сериал о тёмной стороне технологий. Каждый эпизод — отдельная история.",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/7/76/Black_Mirror_Season_1_Cover.png",
+        "photo": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/3e99f1f2-2b56-4a9e-a53b-d68a9c7b54f0/220x330",
         "seasons": "6 сезонов",
         "episodes": "27 эпизодов",
-        "link": "https://vk.com/video?q=Чёрное+зеркало"  # Вставь свою ссылку
+        "link": "https://vk.com/video?q=Чёрное+зеркало"
     },
     {
         "id": "series_5",
@@ -474,10 +474,10 @@ SERIES = [
         "rating": "⭐ 8.1",
         "genre": "Фэнтези / Экшн",
         "description": "Геральт из Ривии — охотник на монстров — борется за место в мире, где люди опаснее чудовищ.",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Witcher_Season_1_Poster.jpg",
+        "photo": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/e1c57c94-fef4-4e9d-9b36-696d2cf90552/220x330",
         "seasons": "3 сезона",
         "episodes": "24 эпизода",
-        "link": "https://vk.com/video?q=Ведьмак+сериал"  # Вставь свою ссылку
+        "link": "https://vk.com/video?q=Ведьмак+сериал"
     },
 ]
 
@@ -489,10 +489,10 @@ HORRORS = [
         "rating": "⭐ 7.3",
         "genre": "Ужасы / Триллер",
         "description": "Группа детей сталкивается с клоуном Пеннивайзом, который охотится на детей каждые 27 лет.",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/5/5c/It_%282017%29_poster.jpg",
+        "photo": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/9370eb05-6e1e-4798-a3e0-5a04ea0c0870/220x330",
         "scare_level": "👻👻👻👻",
         "director": "Андрес Мускетти",
-        "link": "https://vk.com/video?q=Оно+2017"  # Вставь свою ссылку
+        "link": "https://vk.com/video?q=Оно+2017"
     },
     {
         "id": "horror_2",
@@ -501,10 +501,10 @@ HORRORS = [
         "rating": "⭐ 7.3",
         "genre": "Мистика / Ужасы",
         "description": "После смерти бабушки семья раскрывает ужасающие тайны своего рода.",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/a/a8/Hereditary_film_poster.png",
+        "photo": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/6e8b8e0e-5b1b-4e8b-8b0b-8b0b8b0b8b0b/220x330",
         "scare_level": "👻👻👻👻👻",
         "director": "Ари Астер",
-        "link": "https://vk.com/video?q=Реинкарнация+2018"  # Вставь свою ссылку
+        "link": "https://vk.com/video?q=Реинкарнация+2018"
     },
     {
         "id": "horror_3",
@@ -513,10 +513,10 @@ HORRORS = [
         "rating": "⭐ 7.5",
         "genre": "Ужасы / Триллер",
         "description": "Семья выживает в мире, где монстры охотятся на звук. Малейший шум означает смерть.",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/8/87/A_Quiet_Place_film_poster.jpg",
+        "photo": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/b1b1b1b1-b1b1-b1b1-b1b1-b1b1b1b1b1b1/220x330",
         "scare_level": "👻👻👻👻",
         "director": "Джон Красински",
-        "link": "https://vk.com/video?q=Тихое+место"  # Вставь свою ссылку
+        "link": "https://vk.com/video?q=Тихое+место"
     },
     {
         "id": "horror_4",
@@ -528,7 +528,7 @@ HORRORS = [
         "photo": "https://m.media-amazon.com/images/M/MV5BOGIxODA4ODktZTllYS00YTU0LThkYzQtYjgyNDA2MWI5OTQ0XkEyXkFqcGc@._V1_.jpg",
         "scare_level": "👻👻👻👻",
         "director": "Джордан Пил",
-        "link": "https://vk.com/video?q=Прочь+фильм+2017"  # Вставь свою ссылку
+        "link": "https://vk.com/video?q=Прочь+фильм+2017"
     },
     {
         "id": "horror_5",
@@ -540,7 +540,7 @@ HORRORS = [
         "photo": "https://ir.ozone.ru/s3/multimedia-0/6705984204.jpg",
         "scare_level": "👻👻👻",
         "director": "Джеймс Ван",
-        "link": "https://vk.com/video?q=Астрал+фильм"  # Вставь свою ссылку
+        "link": "https://vk.com/video?q=Астрал+фильм"
     },
 ]
 
